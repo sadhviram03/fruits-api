@@ -124,6 +124,30 @@ pytest
 |GET	|| /fruits		          ||                        ||   List of all added fruits       |
 |GET	|| /fruits/1	          ||                        ||   Returns fruit with ID 1        |
 
+
+## CI/CD Pipeline
+
+-> As part of the assignment, I also set up a GitHub Actions-based CI/CD pipeline.
+   Every time I push code or open a pull request to the main branch, the pipeline automatically does the following:
+
+* Checks out the latest code
+
+* Sets up a clean Python 3.11 environment
+
+* Installs dependencies from requirements.txt
+
+* Runs all API tests using pytest
+
+* Builds the Docker image to ensure containerization works as expected
+
+This helps ensure the project is always testable, stable, and deployment-ready.
+
+-> You can find the pipeline config in:
+   .github/workflows/ci.yml
+
+-> And see workflow results in the Actions tab.
+
+
 ~~Thanks for the opportunity — it was a fun build!
 
 
