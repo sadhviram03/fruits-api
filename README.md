@@ -113,16 +113,16 @@ pytest
 
 ## Example API Test Scenarios (Swagger UI)
 
-|===============================================================================================|
-|Method	||  Endpoint	             ||Example Body / Path	    || Expected Result                  |
-|=======||========================||========================||==================================|
-|POST   || /fruits                ||   {"fruit": "Mango"}	  ||   Adds mango with count = 1      |
-|POST	  || /fruits	               ||   {"fruit": "mango"}	  ||   Increments mango to count = 2  |
-|POST	  || /fruits	               ||   {"fruit": "Papaya"}  ||	 Error – unsupported fruit       |
-|GET	   || /fruits/by-name/mango  ||	                       ||   Returns mango details          |
-|GET	   || /fruits/by-name/papaya ||	                       ||   Error – not found              |
-|GET	   || /fruits		              ||                        ||   List of all added fruits       |
-|GET	   || /fruits/1	             ||                        ||   Returns fruit with ID 1        |
+|========================================================================================= |
+|Method	|| Endpoint	              ||Example Body / Path	 || Expected Result                |
+|=======||========================||=====================||================================|
+|POST   || /fruits                ||{"fruit": "Mango"}	  || Adds mango with count = 1      |
+|POST	  || /fruits	               ||{"fruit": "mango"}	  || Increments mango to count = 2  |
+|POST	  || /fruits	               ||{"fruit": "Papaya"}  ||	Error – unsupported fruit      |
+|GET	   || /fruits/by-name/mango  ||	                    || Returns mango details          |
+|GET	   || /fruits/by-name/papaya ||	                    || Error – not found              |
+|GET	   || /fruits		              ||                     || List of all added fruits       |
+|GET	   || /fruits/1	             ||                     || Returns fruit with ID 1        |
 
 
 ## CI/CD Pipeline
